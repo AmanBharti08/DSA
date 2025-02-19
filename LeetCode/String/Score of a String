@@ -1,0 +1,16 @@
+# Question: 3110. Score of a String
+# Solution: 
+
+var scoreOfString = function(s) {
+    let i = 0
+    let j = 1
+    let sum  = 0
+    while(j<s.length){
+        let difference  = Math.abs(s.charCodeAt(i)-s.charCodeAt(j))
+        sum += difference
+        i++
+        j++
+    }
+    return sum
+};
+
